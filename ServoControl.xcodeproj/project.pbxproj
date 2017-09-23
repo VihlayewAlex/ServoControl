@@ -14,8 +14,8 @@
 		3AF143701F743C9600B7A953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF1436F1F743C9600B7A953 /* Assets.xcassets */; };
 		3AF143731F743C9600B7A953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF143711F743C9600B7A953 /* LaunchScreen.storyboard */; };
 		3AF1437B1F74492900B7A953 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1437A1F74492900B7A953 /* MainController.swift */; };
-		3AF1437D1F744F7900B7A953 /* MainDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1437C1F744F7900B7A953 /* MainDataManager.swift */; };
-		3AF143811F74571B00B7A953 /* ConnectingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF143801F74571B00B7A953 /* ConnectingTableViewController.swift */; };
+		3AF1437D1F744F7900B7A953 /* CoreBluetoothService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF1437C1F744F7900B7A953 /* CoreBluetoothService.swift */; };
+		3AF143811F74571B00B7A953 /* ConnectingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF143801F74571B00B7A953 /* ConnectingViewController.swift */; };
 		3AF143841F74580400B7A953 /* Connecting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF143831F74580400B7A953 /* Connecting.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +29,8 @@
 		3AF143721F743C9600B7A953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF143741F743C9600B7A953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AF1437A1F74492900B7A953 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		3AF1437C1F744F7900B7A953 /* MainDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDataManager.swift; sourceTree = "<group>"; };
-		3AF143801F74571B00B7A953 /* ConnectingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingTableViewController.swift; sourceTree = "<group>"; };
+		3AF1437C1F744F7900B7A953 /* CoreBluetoothService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreBluetoothService.swift; sourceTree = "<group>"; };
+		3AF143801F74571B00B7A953 /* ConnectingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingViewController.swift; sourceTree = "<group>"; };
 		3AF143831F74580400B7A953 /* Connecting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Connecting.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AAFC9851F74659700BD7824 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3AF1437C1F744F7900B7A953 /* CoreBluetoothService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		3AF143591F743C9600B7A953 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +76,7 @@
 				3AF143821F74578500B7A953 /* LaunchScreen */,
 				3AF1437E1F7456B400B7A953 /* Main */,
 				3AF1437F1F7456C200B7A953 /* Connecting */,
+				3AAFC9851F74659700BD7824 /* Services */,
 				3AF1436F1F743C9600B7A953 /* Assets.xcassets */,
 				3AF143741F743C9600B7A953 /* Info.plist */,
 				3AF1436C1F743C9600B7A953 /* ServoControl.xcdatamodeld */,
@@ -81,7 +90,6 @@
 				3AF143691F743C9600B7A953 /* Main.storyboard */,
 				3AF143671F743C9600B7A953 /* MainViewController.swift */,
 				3AF1437A1F74492900B7A953 /* MainController.swift */,
-				3AF1437C1F744F7900B7A953 /* MainDataManager.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -90,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3AF143831F74580400B7A953 /* Connecting.storyboard */,
-				3AF143801F74571B00B7A953 /* ConnectingTableViewController.swift */,
+				3AF143801F74571B00B7A953 /* ConnectingViewController.swift */,
 			);
 			path = Connecting;
 			sourceTree = "<group>";
@@ -177,9 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF1437B1F74492900B7A953 /* MainController.swift in Sources */,
-				3AF1437D1F744F7900B7A953 /* MainDataManager.swift in Sources */,
+				3AF1437D1F744F7900B7A953 /* CoreBluetoothService.swift in Sources */,
 				3AF1436E1F743C9600B7A953 /* ServoControl.xcdatamodeld in Sources */,
-				3AF143811F74571B00B7A953 /* ConnectingTableViewController.swift in Sources */,
+				3AF143811F74571B00B7A953 /* ConnectingViewController.swift in Sources */,
 				3AF143681F743C9600B7A953 /* MainViewController.swift in Sources */,
 				3AF143661F743C9600B7A953 /* AppDelegate.swift in Sources */,
 			);
@@ -321,7 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22U234HGU8;
 				INFOPLIST_FILE = ServoControl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vihlayew.ServoControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -337,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 22U234HGU8;
 				INFOPLIST_FILE = ServoControl/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = vihlayew.ServoControl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
